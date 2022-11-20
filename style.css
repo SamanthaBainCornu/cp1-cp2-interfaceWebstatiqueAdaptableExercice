@@ -1,0 +1,237 @@
+body{
+    font-family: 'cuprum';
+    background-color: antiquewhite;
+}
+
+/* ----------------------- */
+/* Les styles du header */ 
+/* ----------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 8px;
+    background-color: #F5B183;
+    height : 110px;
+}
+header > img{
+    height : 90%;
+    width : auto;
+}
+h1{
+    font-size : 3rem;
+}
+.desktop-menu > a{
+    color : black;
+    padding : 5px;
+    margin : 0 1px 0 1px 0;
+    font-size : 1.5rem;
+    border : 1px solid black;
+    border-radius : 5px;
+}
+.desktop-menu > a:hover{
+    background-color : #e98e51;
+    text-decoration: none;
+}
+.mobile-tablet-menu > a > img{
+    width : 60px;
+    height : 40px;
+}
+/* les styles pour version mobile*/
+@media (max-width:500px){
+    header > img{
+        width : 30%;
+        height : auto;
+    }
+    h1{
+        font-size : 1.8rem;
+    }
+    header{
+        height : 90px;
+    }
+}
+/* les styles pour version tablette*/
+@media (500px <= width <= 1024px){
+    h1{
+        font-size : 2.2rem;
+    }
+    header{
+        height : 100px;
+    }
+}
+/* le display du menu burger et des liens ordinateur*/
+@media (min-width:1024px){
+.mobile-tablet-menu{
+    display:none;
+    }
+}
+@media (max-width:1024px){
+    .desktop-menu{
+        display:none;
+        }
+}
+
+
+/* ----------------------- */
+/* Les styles du main home */ 
+/* ----------------------- */
+
+.edito-recipe-top{
+    display : flex;
+    margin : 1.5rem 0.5rem 1rem 0.5rem;
+}
+.edito-recipe-top > div{
+    text-align: center;
+    padding : 0.5rem;
+    margin : 0.5rem;
+    border : 1px solid #ffd39b;
+    border-radius : 5px;
+    background-color: #f9e3c5;
+}
+.edito-text{
+    text-align: justify;
+}
+h3{
+    font-size: 2rem;
+}
+.recipe-content{
+    display: flex;
+}
+.recipe-content > img{
+    width : 50%;
+    height : auto;
+    border : 2px solid white;
+    border-radius : 5px;
+    object-fit: contain;
+    margin : auto;
+    margin-right : 0.5rem;
+}
+.recipe-excerpt{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size : 2.2rem;
+    text-align: center;
+    background-color: #e96e1b;
+    margin : 0.5rem;
+}
+main > div > div > div > article {
+    text-align: center;
+    padding : 0.5rem;
+    margin : 0.5rem;
+    border : 1px solid #ffd39b;
+    border-radius : 5px;
+    background-color: #f9e3c5;
+}
+
+.recent-recipes, .best-rate-recipes{
+    margin-bottom : 4rem;
+}
+.random-recipe > article{
+    border : none;
+    padding : 0;
+}
+.random-recipe > article > .recipe-content{
+    align-items: center;
+}
+.recipe-excerpt > a {
+    margin-top : 1rem;
+    color:#e96e1b;
+    text-decoration: underline;
+}
+
+
+/* les styles pour version mobile */
+@media (max-width:500px){
+    .edito-recipe-top{
+        flex-direction : column;      
+    }
+}
+/* les styles pour version tablette */
+@media (500px <= width <= 1024px){
+    .edito-recipe-top{
+        flex-direction:row;
+    }
+    .edito{
+        width : 40%;
+    }
+    .random-recipe{
+        width : 60%;
+    }
+    .recipes-home{
+        display: flex;
+    }
+}
+/* les styles pour version ordinateur */
+@media (min-width:1024px){
+    .edito-recipe-top{
+        flex-direction:row;
+        max-height : 500px;
+        font-size : 1.5rem;
+    }
+    div.random-recipe > article > div.recipe-content > img {
+        height : 280px;
+        width : auto;
+        margin : 0 5rem 1rem 5rem;
+    }
+    .edito{
+        width : 30%;
+    }
+    .random-recipe{
+        width : 70%;
+    }
+    h2{
+        font-size : 3rem;
+    }
+    .container-recipes{
+        display: flex;
+    }
+    .container-recipes > article > .recipe-content {
+        flex-direction: column;
+    }
+    .container-recipes > article > .recipe-content > img {
+        margin : auto;
+    }
+}
+
+
+
+/* ----------------------- */
+/* Les styles du footer */ 
+/* ----------------------- */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 8px;
+    background-color: #F5B183;
+    height : 110px;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+}
+.footer-menu > a{
+    margin : 1rem;
+    color : #e96e1b;
+}
+
+/* les styles pour version tablette */
+@media (500px <= width <= 1024px){
+    footer{
+        font-size : 1.2rem;
+    }
+}
+/* les styles pour version ordinateur */
+@media (min-width:1024px){
+    footer{
+        font-size: 1.8rem;
+    }
+    .footer-menu > a {
+        margin : 0.5rem 3rem 0.5rem 3rem;
+    }
+}
